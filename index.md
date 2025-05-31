@@ -21,6 +21,7 @@
   </div>
 
   <!-- Projects Section (Cards) -->
+  <div id="projects-details"></div>
   <div id="projects" class="tab-content active">
     <div class="card">
       <img src="assets/images/project1.jpg" alt="ML Project">
