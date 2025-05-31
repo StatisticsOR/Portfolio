@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | ML Engineer & Data Scientist</title>
+  <title>Seyyad Najwan | Data Analyst</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <h1>Your Name</h1>
-    <p>Machine Learning Engineer | Data Scientist</p>
+    <h1>Seyyad Najwan</h1>
+    <p>Data Analyst</p>
   </header>
 
   <!-- Navigation Tabs -->
