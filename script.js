@@ -13,3 +13,9 @@ function openTab(tabName) {
   document.getElementById(tabName).classList.add('active');
   event.currentTarget.classList.add('active');
 }
+fetch('projects.md')
+  .then(response => response.text())
+  .then(markdown => {
+    // Convert Markdown to HTML (using marked.js)
+    document.getElementById('projects-details').innerHTML = marked.parse(markdown);
+  });
