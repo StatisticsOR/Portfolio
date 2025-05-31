@@ -1,46 +1,60 @@
----
-layout: home
-title: Home
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | ML Engineer & Data Scientist</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Your Name</h1>
+    <p>Machine Learning Engineer | Data Scientist</p>
+  </header>
 
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-
-# Welcome to My Portfolio 👋
-
-Hi, I'm **Seyyad Najwan**, a passionate **data analyst** with a strong foundation in **statistics**, **operations research**, and **programming**.  
-I specialize in **data cleaning**, **Excel automation**, **Power Query**, and leveraging **machine learning** models to solve complex business problems.
-
-I am always eager to work on real-world data to drive actionable insights and optimize decision-making processes.
-
----
-
-### Explore My Work
-
-<div class="card-container">
-  <div class="card">
-    <h3>Projects</h3>
-    <p>Explore the projects I have worked on in various domains including data analysis, machine learning, and automation.</p>
-    <a href="projects.md" class="btn">View Projects</a>
+  <!-- Navigation Tabs -->
+  <div class="tabs">
+    <button class="tab-button active" onclick="openTab('projects')">Projects</button>
+    <button class="tab-button" onclick="openTab('skills')">Skills</button>
+    <button class="tab-button" onclick="openTab('contact')">Contact</button>
   </div>
-  <div class="card">
-    <h3>Skills</h3>
-    <p>Take a look at my skillset in data analysis, visualization, programming, and more.</p>
-    <a href="skills.md" class="btn">View Skills</a>
-  </div>
-  <div class="card">
-    <h3>Contact</h3>
-    <p>Get in touch with me to discuss opportunities or projects you'd like to collaborate on.</p>
-    <a href="contact.md" class="btn">Contact Me</a>
-  </div>
-</div>
 
----
-<div class="card-container">
-   <div class="card">
-    <h3>Contact</h3>
-    <p>Get in touch with me to discuss opportunities or projects you'd like to collaborate on.</p>
-    <a href="contact.md" class="btn">Contact Me</a>
+  <!-- Projects Section (Cards) -->
+  <div id="projects" class="tab-content active">
+    <div class="card">
+      <img src="assets/images/project1.jpg" alt="ML Project">
+      <h3>Stock Price Prediction</h3>
+      <p>LSTM model with 92% accuracy.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
+    <div class="card">
+      <img src="assets/images/project2.jpg" alt="NLP Project">
+      <h3>Twitter Sentiment Analysis</h3>
+      <p>BERT-based classifier.</p>
+      <a href="#" class="btn">View Project</a>
+    </div>
   </div>
- </div>
 
-Feel free to explore more on the **[Contact](contact.md)** page.
+  <!-- Skills Section -->
+  <div id="skills" class="tab-content">
+    <div class="card">
+      <h3>Machine Learning</h3>
+      <ul>
+        <li>Python (TensorFlow, PyTorch)</li>
+        <li>Scikit-learn, Pandas, NumPy</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div id="contact" class="tab-content">
+    <div class="card">
+      <h3>Get in Touch</h3>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
