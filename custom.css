@@ -1,0 +1,59 @@
+/* Body Background and Text Color */
+body {
+  background-color: #f4f4f9; /* Light gray background for the page */
+  color: #333333; /* Dark text color for contrast */
+}
+
+/* Header Styling */
+header {
+  background-color: #007BFF; /* Blue background for the header */
+  color: white; /* White text on the header */
+}
+
+/* Card Container (flex layout for cards) */
+.card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+/* Card Styling */
+.card {
+  background-color: #ffffff; /* White background for cards */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Card Heading */
+.card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #007BFF; /* Blue color for card headings */
+}
+
+/* Card Text */
+.card p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #555555; /* Dark gray text inside cards */
+}
+
+/* Button Styling */
+.card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Blue background for buttons */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Button Hover Effect */
+.card .btn:hover {
+  background-color: #0056b3; /* Darker blue when hovering */
+}
