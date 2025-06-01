@@ -54,6 +54,8 @@ header {
 
 /* Individual Card Styling */
 .project-card {
+  display: flex;          
+  flex-direction: column;
   background: white;
   border-radius: 8px;
   overflow: hidden;
@@ -67,6 +69,7 @@ header {
 }
 
 .card-content {
+  flex: 1;
   padding: 1.5rem;
 }
 
