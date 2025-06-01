@@ -19,21 +19,44 @@ header {
   padding: 50px 0;
 }
 
+/* Keep your existing section margin */
 section {
   margin: 40px 0;
 }
 
+/* Upgrade .project-grid to use CSS Grid (more flexible than flexbox for cards) */
 .project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
 }
 
+/* Enhance .project to be proper cards */
 .project {
-  flex: 1;
   background: white;
-  padding: 20px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Add hover effects */
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Add tech tags (like in previous example) */
+.tech-tag {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 8px;
+  margin-top: 10px;
 }
 
 footer {
