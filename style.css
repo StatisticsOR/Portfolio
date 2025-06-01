@@ -19,6 +19,23 @@ header {
   padding: 50px 0;
 }
 
+/* Add this to your CSS file */
+#about {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+}
+
+/* Optional: Add hover effect like your project cards */
+#about:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
 /* Keep your existing section margin */
 /* Projects Section */
 #projects {
