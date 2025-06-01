@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>Najwan's | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Your Name</h1>
-      <p>Web Developer | Freelancer | Creator</p>
+      <h1>Seyyad Najwan</h1>
+      <p>Data Analyst</p>
     </div>
   </header>
 
@@ -42,8 +42,8 @@
   <section id="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <p>Email: yourname@email.com</p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
+      <p>Gmail: statisticsor@gmail.com</p>
+      <p>GitHub: <a href="https://github.com/statisticsor" target="_blank">StatisticSOR</a></p>
     </div>
   </section>
 
