@@ -20,43 +20,96 @@ header {
 }
 
 /* Keep your existing section margin */
-section {
-  margin: 40px 0;
+/* Projects Section */
+#projects {
+  padding: 4rem 2rem;
+  background: #f8f9fa;
 }
 
-/* Upgrade .project-grid to use CSS Grid (more flexible than flexbox for cards) */
-.project-grid {
+.projects-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projects-header h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background: #3498db;
+  margin: 1rem auto;
+}
+
+/* Cards Layout */
+.cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 25px;
-  padding: 20px 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Enhance .project to be proper cards */
-.project {
+/* Individual Card Styling */
+.project-card {
   background: white;
-  border-radius: 10px;
-  padding: 25px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Add hover effects */
-.project:hover {
+.project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Optional: Add tech tags (like in previous example) */
-.tech-tag {
-  display: inline-block;
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-content h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  color: #7f8c8d;
+  line-height: 1.6;
+}
+
+/* Technology Tags */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.tech-tags span {
   background: #e0f2fe;
   color: #0369a1;
-  padding: 3px 10px;
+  padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
-  margin-right: 8px;
-  margin-top: 10px;
+}
+
+/* Button Styling */
+.card-button {
+  display: block;
+  text-align: center;
+  padding: 0.8rem;
+  background: #3498db;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.card-button:hover {
+  background: #2980b9;
 }
 
 footer {
